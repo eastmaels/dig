@@ -28,7 +28,7 @@ Then, go to Faucet channel in Discord to get your token: https://discord.com/cha
  ```
  digd tx staking create-validator \
   --amount=1500000000udix \
-  --pubkey=$(digd tendermint show-validator) \
+  --pubkey=$(digd tendermint show-validator --home ~/digtest) \
   --moniker=<moniker> \
   --chain-id=digtest-5 \
   --commission-rate="0.05" \
